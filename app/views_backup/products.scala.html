@@ -1,0 +1,52 @@
+@(title: String)
+
+@main(title) {
+<div class="container p-4">
+    <h1 class="mb-4">@title</h1>
+
+    <!-- Bootstrap Tabs -->
+    <ul class="nav nav-tabs" id="productTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="list-tab" data-bs-toggle="tab" data-bs-target="#list"
+                    type="button" role="tab">List Product</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="type-tab" data-bs-toggle="tab" data-bs-target="#type"
+                    type="button" role="tab">Product By Type</button>
+        </li>
+    </ul>
+
+    <div class="tab-content mt-3" id="productTabsContent">
+        <!-- List Product Tab -->
+        <div class="tab-pane fade show active" id="list" role="tabpanel">
+            <table class="table table-bordered">
+                <thead class="table-light">
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Distributor</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                    <th>Type</th>
+                </tr>
+                </thead>
+                <tbody id="productTableBody">
+                <tr><td colspan="6" class="text-center">Loading...</td></tr>
+                </tbody>
+            </table>
+            <div class="d-flex justify-content-between mt-3">
+                <button id="prevPage" class="btn btn-secondary btn-sm">Prev</button>
+                <span id="pageInfo" class="align-self-center"></span>
+                <button id="nextPage" class="btn btn-secondary btn-sm">Next</button>
+            </div>
+        </div>
+
+        <!-- Product By Type Tab -->
+        <div class="tab-pane fade" id="type" role="tabpanel">
+            <div id="typeContainer">Loading...</div>
+        </div>
+    </div>
+</div>
+
+<script src='@routes.Assets.versioned("javascripts/products.js")'></script>
+}

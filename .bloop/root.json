@@ -1,0 +1,1515 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "root",
+        "directory": "/home/nuge/bbelajar/farm",
+        "workspaceDir": "/home/nuge/bbelajar/farm",
+        "sources": [
+            "/home/nuge/bbelajar/farm/app",
+            "/home/nuge/bbelajar/farm/app-3",
+            "/home/nuge/bbelajar/farm/target/scala-3.3.4/src_managed/main",
+            "/home/nuge/bbelajar/farm/target/scala-3.3.4/routes/main",
+            "/home/nuge/bbelajar/farm/target/scala-3.3.4/twirl/main"
+        ],
+        "dependencies": [
+            
+        ],
+        "classpath": [
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.3.6/scala3-library_3-3.3.6.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/twirl/twirl-api_3/2.0.9/twirl-api_3-2.0.9.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-server_3/3.0.8/play-server_3-3.0.8.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-logback_3/3.0.8/play-logback_3-3.0.8.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-pekko-http-server_3/3.0.8/play-pekko-http-server_3-3.0.8.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-filters-helpers_3/3.0.8/play-filters-helpers_3-3.0.8.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-guice_3/3.0.8/play-guice_3-3.0.8.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-jdbc-evolutions_3/3.0.8/play-jdbc-evolutions_3-3.0.8.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-jdbc_3/3.0.8/play-jdbc_3-3.0.8.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/anorm/anorm_3/2.7.0/anorm_3-2.7.0.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/postgresql/postgresql/42.7.3/postgresql-42.7.3.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.16/scala-library-2.13.16.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_3/2.2.0/scala-xml_3-2.2.0.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play_3/3.0.8/play_3-3.0.8.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.5.18/logback-classic-1.5.18.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-streams_3/3.0.8/play-streams_3-3.0.8.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-http-core_3/1.0.1/pekko-http-core_3-1.0.1.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/inject/guice/6.0.0/guice-6.0.0.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/inject/extensions/guice-assistedinject/6.0.0/guice-assistedinject-6.0.0.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-jdbc-api_3/3.0.8/play-jdbc-api_3-3.0.8.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/googlecode/usc/jdbcdslog/1.0.6.2/jdbcdslog-1.0.6.2.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/tyrex/tyrex/1.0.1/tyrex-1.0.1.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/anorm/anorm-tokenizer_3/2.7.0/anorm-tokenizer_3-2.7.0.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/joda-time/joda-time/2.11.1/joda-time-2.11.1.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/joda/joda-convert/2.2.2/joda-convert-2.2.2.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_3/2.3.0/scala-parser-combinators_3-2.3.0.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/checkerframework/checker-qual/3.42.0/checker-qual-3.42.0.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-build-link/3.0.8/play-build-link-3.0.8.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-configuration_3/3.0.8/play-configuration_3-3.0.8.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/2.0.17/jul-to-slf4j-2.0.17.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/2.0.17/jcl-over-slf4j-2.0.17.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-actor_3/1.0.3/pekko-actor_3-1.0.3.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-actor-typed_3/1.0.3/pekko-actor-typed_3-1.0.3.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-slf4j_3/1.0.3/pekko-slf4j_3-1.0.3.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-serialization-jackson_3/1.0.3/pekko-serialization-jackson_3-1.0.3.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.14.3/jackson-core-2.14.3.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.14.3/jackson-annotations-2.14.3.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.14.3/jackson-datatype-jdk8-2.14.3.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.14.3/jackson-datatype-jsr310-2.14.3.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.14.3/jackson-databind-2.14.3.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.14.3/jackson-dataformat-cbor-2.14.3.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-parameter-names/2.14.3/jackson-module-parameter-names-2.14.3.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-scala_3/2.14.3/jackson-module-scala_3-2.14.3.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/io/jsonwebtoken/jjwt-api/0.11.5/jjwt-api-0.11.5.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/io/jsonwebtoken/jjwt-impl/0.11.5/jjwt-impl-0.11.5.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/io/jsonwebtoken/jjwt-jackson/0.11.5/jjwt-jackson-0.11.5.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-json_3/3.0.5/play-json_3-3.0.5.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/guava/guava/32.1.3-jre/guava-32.1.3-jre.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/ssl-config-core_3/0.6.1/ssl-config-core_3-0.6.1.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-core/1.5.18/logback-core-1.5.18.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-stream_3/1.0.3/pekko-stream_3-1.0.3.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-parsing_3/1.0.1/pekko-parsing_3-1.0.1.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/parboiled/parboiled_3/2.5.0/parboiled_3-2.5.0.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.21.1/error_prone_annotations-2.21.1.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-exceptions/3.0.8/play-exceptions-3.0.8.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.3/config-1.4.3.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/lz4/lz4-java/1.8.0/lz4-java-1.8.0.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-functional_3/3.0.5/play-functional_3-3.0.5.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar",
+            "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-protobuf-v3_3/1.0.3/pekko-protobuf-v3_3-1.0.3.jar"
+        ],
+        "out": "/home/nuge/bbelajar/farm/.bloop/root",
+        "classesDir": "/home/nuge/bbelajar/farm/.bloop/root/scala-3/classes",
+        "resources": [
+            "/home/nuge/bbelajar/farm/conf",
+            "/home/nuge/bbelajar/farm/target/scala-3.3.4/resource_managed/main"
+        ],
+        "scala": {
+            "organization": "org.scala-lang",
+            "name": "scala-compiler",
+            "version": "3.3.4",
+            "options": [
+                "-deprecation",
+                "-unchecked",
+                "-encoding",
+                "utf8"
+            ],
+            "jars": [
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.3.4/scala3-library_3-3.3.4.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.16/scala-library-2.13.16.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-compiler_3/3.3.4/scala3-compiler_3-3.3.4.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-interfaces/3.3.4/scala3-interfaces-3.3.4.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/tasty-core_3/3.3.4/tasty-core_3-3.3.4.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-asm/9.6.0-scala-1/scala-asm-9.6.0-scala-1.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/compiler-interface/1.9.6/compiler-interface-1.9.6.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-reader/3.25.1/jline-reader-3.25.1.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-terminal/3.25.1/jline-terminal-3.25.1.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-terminal-jna/3.25.1/jline-terminal-jna-3.25.1.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-interface/1.9.8/util-interface-1.9.8.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-native/3.25.1/jline-native-3.25.1.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.14.0/jna-5.14.0.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scaladoc_3/3.3.4/scaladoc_3-3.3.4.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-tasty-inspector_3/3.3.4/scala3-tasty-inspector_3-3.3.4.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark/0.62.2/flexmark-0.62.2.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-ast/0.62.2/flexmark-util-ast-0.62.2.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-data/0.62.2/flexmark-util-data-0.62.2.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-html/0.62.2/flexmark-util-html-0.62.2.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-anchorlink/0.62.2/flexmark-ext-anchorlink-0.62.2.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-autolink/0.62.2/flexmark-ext-autolink-0.62.2.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-emoji/0.62.2/flexmark-ext-emoji-0.62.2.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-strikethrough/0.62.2/flexmark-ext-gfm-strikethrough-0.62.2.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-tasklist/0.62.2/flexmark-ext-gfm-tasklist-0.62.2.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-wikilink/0.62.2/flexmark-ext-wikilink-0.62.2.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-tables/0.62.2/flexmark-ext-tables-0.62.2.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-yaml-front-matter/0.62.2/flexmark-ext-yaml-front-matter-0.62.2.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/nl/big-o/liqp/0.8.2/liqp-0.8.2.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jsoup/jsoup/1.17.2/jsoup-1.17.2.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.15.1/jackson-dataformat-yaml-2.15.1.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-builder/0.62.2/flexmark-util-builder-0.62.2.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-collection/0.62.2/flexmark-util-collection-0.62.2.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-dependency/0.62.2/flexmark-util-dependency-0.62.2.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-format/0.62.2/flexmark-util-format-0.62.2.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-misc/0.62.2/flexmark-util-misc-0.62.2.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-sequence/0.62.2/flexmark-util-sequence-0.62.2.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-visitor/0.62.2/flexmark-util-visitor-0.62.2.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jetbrains/annotations/15.0/annotations-15.0.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util/0.62.2/flexmark-util-0.62.2.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/nibor/autolink/autolink/0.6.0/autolink-0.6.0.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-jira-converter/0.62.2/flexmark-jira-converter-0.62.2.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.7.2/antlr4-runtime-4.7.2.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.15.1/jackson-annotations-2.15.1.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.15.1/jackson-core-2.15.1.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.15.1/jackson-databind-2.15.1.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.12.1/jackson-datatype-jsr310-2.12.1.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/ua/co/k/strftime4j/1.0.5/strftime4j-1.0.5.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/yaml/snakeyaml/2.0/snakeyaml-2.0.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-options/0.62.2/flexmark-util-options-0.62.2.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-ins/0.62.2/flexmark-ext-ins-0.62.2.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-superscript/0.62.2/flexmark-ext-superscript-0.62.2.jar"
+            ],
+            "setup": {
+                "order": "mixed",
+                "addLibraryToBootClasspath": false,
+                "addCompilerToClasspath": false,
+                "addExtraJarsToClasspath": false,
+                "manageBootClasspath": false,
+                "filterLibraryFromClasspath": false
+            },
+            "bridgeJars": [
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-sbt-bridge/3.3.4/scala3-sbt-bridge-3.3.4.jar"
+            ]
+        },
+        "java": {
+            "options": [
+                "-encoding",
+                "utf8",
+                "-g"
+            ]
+        },
+        "test": {
+            "frameworks": [
+                {
+                    "names": [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "munit.Framework"
+                    ]
+                },
+                {
+                    "names": [
+                        "zio.test.sbt.ZTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "weaver.framework.CatsEffect"
+                    ]
+                },
+                {
+                    "names": [
+                        "hedgehog.sbt.Framework"
+                    ]
+                }
+            ],
+            "options": {
+                "excludes": [
+                    
+                ],
+                "arguments": [
+                    
+                ]
+            }
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "/usr/lib/jvm/java-21-openjdk-amd64",
+                "options": [
+                    "-Duser.dir=/home/nuge/bbelajar/farm"
+                ]
+            },
+            "mainClass": [
+                
+            ],
+            "runtimeConfig": {
+                "home": "/usr/lib/jvm/java-21-openjdk-amd64",
+                "options": [
+                    "-Duser.dir=/home/nuge/bbelajar/farm"
+                ]
+            },
+            "classpath": [
+                "/home/nuge/bbelajar/farm/.bloop/root/scala-3/classes",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.3.6/scala3-library_3-3.3.6.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/twirl/twirl-api_3/2.0.9/twirl-api_3-2.0.9.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-server_3/3.0.8/play-server_3-3.0.8.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-logback_3/3.0.8/play-logback_3-3.0.8.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-pekko-http-server_3/3.0.8/play-pekko-http-server_3-3.0.8.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-filters-helpers_3/3.0.8/play-filters-helpers_3-3.0.8.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-guice_3/3.0.8/play-guice_3-3.0.8.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-jdbc-evolutions_3/3.0.8/play-jdbc-evolutions_3-3.0.8.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-jdbc_3/3.0.8/play-jdbc_3-3.0.8.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/anorm/anorm_3/2.7.0/anorm_3-2.7.0.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/postgresql/postgresql/42.7.3/postgresql-42.7.3.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.16/scala-library-2.13.16.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_3/2.2.0/scala-xml_3-2.2.0.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play_3/3.0.8/play_3-3.0.8.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.5.18/logback-classic-1.5.18.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-streams_3/3.0.8/play-streams_3-3.0.8.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-http-core_3/1.0.1/pekko-http-core_3-1.0.1.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/inject/guice/6.0.0/guice-6.0.0.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/inject/extensions/guice-assistedinject/6.0.0/guice-assistedinject-6.0.0.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-jdbc-api_3/3.0.8/play-jdbc-api_3-3.0.8.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/googlecode/usc/jdbcdslog/1.0.6.2/jdbcdslog-1.0.6.2.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/tyrex/tyrex/1.0.1/tyrex-1.0.1.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/anorm/anorm-tokenizer_3/2.7.0/anorm-tokenizer_3-2.7.0.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/joda-time/joda-time/2.11.1/joda-time-2.11.1.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/joda/joda-convert/2.2.2/joda-convert-2.2.2.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_3/2.3.0/scala-parser-combinators_3-2.3.0.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/checkerframework/checker-qual/3.42.0/checker-qual-3.42.0.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-build-link/3.0.8/play-build-link-3.0.8.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-configuration_3/3.0.8/play-configuration_3-3.0.8.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/2.0.17/jul-to-slf4j-2.0.17.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/2.0.17/jcl-over-slf4j-2.0.17.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-actor_3/1.0.3/pekko-actor_3-1.0.3.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-actor-typed_3/1.0.3/pekko-actor-typed_3-1.0.3.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-slf4j_3/1.0.3/pekko-slf4j_3-1.0.3.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-serialization-jackson_3/1.0.3/pekko-serialization-jackson_3-1.0.3.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.14.3/jackson-core-2.14.3.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.14.3/jackson-annotations-2.14.3.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.14.3/jackson-datatype-jdk8-2.14.3.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.14.3/jackson-datatype-jsr310-2.14.3.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.14.3/jackson-databind-2.14.3.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.14.3/jackson-dataformat-cbor-2.14.3.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-parameter-names/2.14.3/jackson-module-parameter-names-2.14.3.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-scala_3/2.14.3/jackson-module-scala_3-2.14.3.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/io/jsonwebtoken/jjwt-api/0.11.5/jjwt-api-0.11.5.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/io/jsonwebtoken/jjwt-impl/0.11.5/jjwt-impl-0.11.5.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/io/jsonwebtoken/jjwt-jackson/0.11.5/jjwt-jackson-0.11.5.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-json_3/3.0.5/play-json_3-3.0.5.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/guava/guava/32.1.3-jre/guava-32.1.3-jre.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/ssl-config-core_3/0.6.1/ssl-config-core_3-0.6.1.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-core/1.5.18/logback-core-1.5.18.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-stream_3/1.0.3/pekko-stream_3-1.0.3.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-parsing_3/1.0.1/pekko-parsing_3-1.0.1.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/parboiled/parboiled_3/2.5.0/parboiled_3-2.5.0.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.21.1/error_prone_annotations-2.21.1.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-exceptions/3.0.8/play-exceptions-3.0.8.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.3/config-1.4.3.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/lz4/lz4-java/1.8.0/lz4-java-1.8.0.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-functional_3/3.0.5/play-functional_3-3.0.5.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar",
+                "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-protobuf-v3_3/1.0.3/pekko-protobuf-v3_3-1.0.3.jar"
+            ]
+        },
+        "resolution": {
+            "modules": [
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala3-library_3",
+                    "version": "3.3.6",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala3-library_3",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.3.6/scala3-library_3-3.3.6.jar"
+                        },
+                        {
+                            "name": "scala3-library_3",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.3.6/scala3-library_3-3.3.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.playframework.twirl",
+                    "name": "twirl-api_3",
+                    "version": "2.0.9",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "twirl-api_3",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/twirl/twirl-api_3/2.0.9/twirl-api_3-2.0.9.jar"
+                        },
+                        {
+                            "name": "twirl-api_3",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/twirl/twirl-api_3/2.0.9/twirl-api_3-2.0.9-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.playframework",
+                    "name": "play-server_3",
+                    "version": "3.0.8",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-server_3",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-server_3/3.0.8/play-server_3-3.0.8.jar"
+                        },
+                        {
+                            "name": "play-server_3",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-server_3/3.0.8/play-server_3-3.0.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.playframework",
+                    "name": "play-logback_3",
+                    "version": "3.0.8",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-logback_3",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-logback_3/3.0.8/play-logback_3-3.0.8.jar"
+                        },
+                        {
+                            "name": "play-logback_3",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-logback_3/3.0.8/play-logback_3-3.0.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.playframework",
+                    "name": "play-pekko-http-server_3",
+                    "version": "3.0.8",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-pekko-http-server_3",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-pekko-http-server_3/3.0.8/play-pekko-http-server_3-3.0.8.jar"
+                        },
+                        {
+                            "name": "play-pekko-http-server_3",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-pekko-http-server_3/3.0.8/play-pekko-http-server_3-3.0.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.playframework",
+                    "name": "play-filters-helpers_3",
+                    "version": "3.0.8",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-filters-helpers_3",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-filters-helpers_3/3.0.8/play-filters-helpers_3-3.0.8.jar"
+                        },
+                        {
+                            "name": "play-filters-helpers_3",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-filters-helpers_3/3.0.8/play-filters-helpers_3-3.0.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.playframework",
+                    "name": "play-guice_3",
+                    "version": "3.0.8",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-guice_3",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-guice_3/3.0.8/play-guice_3-3.0.8.jar"
+                        },
+                        {
+                            "name": "play-guice_3",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-guice_3/3.0.8/play-guice_3-3.0.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.playframework",
+                    "name": "play-jdbc-evolutions_3",
+                    "version": "3.0.8",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-jdbc-evolutions_3",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-jdbc-evolutions_3/3.0.8/play-jdbc-evolutions_3-3.0.8.jar"
+                        },
+                        {
+                            "name": "play-jdbc-evolutions_3",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-jdbc-evolutions_3/3.0.8/play-jdbc-evolutions_3-3.0.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.playframework",
+                    "name": "play-jdbc_3",
+                    "version": "3.0.8",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-jdbc_3",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-jdbc_3/3.0.8/play-jdbc_3-3.0.8.jar"
+                        },
+                        {
+                            "name": "play-jdbc_3",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-jdbc_3/3.0.8/play-jdbc_3-3.0.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.playframework.anorm",
+                    "name": "anorm_3",
+                    "version": "2.7.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "anorm_3",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/anorm/anorm_3/2.7.0/anorm_3-2.7.0.jar"
+                        },
+                        {
+                            "name": "anorm_3",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/anorm/anorm_3/2.7.0/anorm_3-2.7.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.postgresql",
+                    "name": "postgresql",
+                    "version": "42.7.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "postgresql",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/postgresql/postgresql/42.7.3/postgresql-42.7.3.jar"
+                        },
+                        {
+                            "name": "postgresql",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/postgresql/postgresql/42.7.3/postgresql-42.7.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.13.16",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.16/scala-library-2.13.16.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.16/scala-library-2.13.16-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-xml_3",
+                    "version": "2.2.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-xml_3",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_3/2.2.0/scala-xml_3-2.2.0.jar"
+                        },
+                        {
+                            "name": "scala-xml_3",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_3/2.2.0/scala-xml_3-2.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.playframework",
+                    "name": "play_3",
+                    "version": "3.0.8",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play_3",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play_3/3.0.8/play_3-3.0.8.jar"
+                        },
+                        {
+                            "name": "play_3",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play_3/3.0.8/play_3-3.0.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "ch.qos.logback",
+                    "name": "logback-classic",
+                    "version": "1.5.18",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "logback-classic",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.5.18/logback-classic-1.5.18.jar"
+                        },
+                        {
+                            "name": "logback-classic",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.5.18/logback-classic-1.5.18-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.playframework",
+                    "name": "play-streams_3",
+                    "version": "3.0.8",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-streams_3",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-streams_3/3.0.8/play-streams_3-3.0.8.jar"
+                        },
+                        {
+                            "name": "play-streams_3",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-streams_3/3.0.8/play-streams_3-3.0.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.pekko",
+                    "name": "pekko-http-core_3",
+                    "version": "1.0.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "pekko-http-core_3",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-http-core_3/1.0.1/pekko-http-core_3-1.0.1.jar"
+                        },
+                        {
+                            "name": "pekko-http-core_3",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-http-core_3/1.0.1/pekko-http-core_3-1.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.inject",
+                    "name": "guice",
+                    "version": "6.0.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "guice",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/inject/guice/6.0.0/guice-6.0.0.jar"
+                        },
+                        {
+                            "name": "guice",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/inject/guice/6.0.0/guice-6.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.inject.extensions",
+                    "name": "guice-assistedinject",
+                    "version": "6.0.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "guice-assistedinject",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/inject/extensions/guice-assistedinject/6.0.0/guice-assistedinject-6.0.0.jar"
+                        },
+                        {
+                            "name": "guice-assistedinject",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/inject/extensions/guice-assistedinject/6.0.0/guice-assistedinject-6.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.playframework",
+                    "name": "play-jdbc-api_3",
+                    "version": "3.0.8",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-jdbc-api_3",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-jdbc-api_3/3.0.8/play-jdbc-api_3-3.0.8.jar"
+                        },
+                        {
+                            "name": "play-jdbc-api_3",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-jdbc-api_3/3.0.8/play-jdbc-api_3-3.0.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.zaxxer",
+                    "name": "HikariCP",
+                    "version": "5.0.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "HikariCP",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar"
+                        },
+                        {
+                            "name": "HikariCP",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.googlecode.usc",
+                    "name": "jdbcdslog",
+                    "version": "1.0.6.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jdbcdslog",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/googlecode/usc/jdbcdslog/1.0.6.2/jdbcdslog-1.0.6.2.jar"
+                        },
+                        {
+                            "name": "jdbcdslog",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/googlecode/usc/jdbcdslog/1.0.6.2/jdbcdslog-1.0.6.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "tyrex",
+                    "name": "tyrex",
+                    "version": "1.0.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "tyrex",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/tyrex/tyrex/1.0.1/tyrex-1.0.1.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.playframework.anorm",
+                    "name": "anorm-tokenizer_3",
+                    "version": "2.7.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "anorm-tokenizer_3",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/anorm/anorm-tokenizer_3/2.7.0/anorm-tokenizer_3-2.7.0.jar"
+                        },
+                        {
+                            "name": "anorm-tokenizer_3",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/anorm/anorm-tokenizer_3/2.7.0/anorm-tokenizer_3-2.7.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "joda-time",
+                    "name": "joda-time",
+                    "version": "2.11.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "joda-time",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/joda-time/joda-time/2.11.1/joda-time-2.11.1.jar"
+                        },
+                        {
+                            "name": "joda-time",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/joda-time/joda-time/2.11.1/joda-time-2.11.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.joda",
+                    "name": "joda-convert",
+                    "version": "2.2.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "joda-convert",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/joda/joda-convert/2.2.2/joda-convert-2.2.2.jar"
+                        },
+                        {
+                            "name": "joda-convert",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/joda/joda-convert/2.2.2/joda-convert-2.2.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-parser-combinators_3",
+                    "version": "2.3.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-parser-combinators_3",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_3/2.3.0/scala-parser-combinators_3-2.3.0.jar"
+                        },
+                        {
+                            "name": "scala-parser-combinators_3",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_3/2.3.0/scala-parser-combinators_3-2.3.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.checkerframework",
+                    "name": "checker-qual",
+                    "version": "3.42.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "checker-qual",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/checkerframework/checker-qual/3.42.0/checker-qual-3.42.0.jar"
+                        },
+                        {
+                            "name": "checker-qual",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/checkerframework/checker-qual/3.42.0/checker-qual-3.42.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.playframework",
+                    "name": "play-build-link",
+                    "version": "3.0.8",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-build-link",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-build-link/3.0.8/play-build-link-3.0.8.jar"
+                        },
+                        {
+                            "name": "play-build-link",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-build-link/3.0.8/play-build-link-3.0.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.playframework",
+                    "name": "play-configuration_3",
+                    "version": "3.0.8",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-configuration_3",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-configuration_3/3.0.8/play-configuration_3-3.0.8.jar"
+                        },
+                        {
+                            "name": "play-configuration_3",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-configuration_3/3.0.8/play-configuration_3-3.0.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.slf4j",
+                    "name": "slf4j-api",
+                    "version": "2.0.17",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "slf4j-api",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar"
+                        },
+                        {
+                            "name": "slf4j-api",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.slf4j",
+                    "name": "jul-to-slf4j",
+                    "version": "2.0.17",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jul-to-slf4j",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/2.0.17/jul-to-slf4j-2.0.17.jar"
+                        },
+                        {
+                            "name": "jul-to-slf4j",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/2.0.17/jul-to-slf4j-2.0.17-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.slf4j",
+                    "name": "jcl-over-slf4j",
+                    "version": "2.0.17",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jcl-over-slf4j",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/2.0.17/jcl-over-slf4j-2.0.17.jar"
+                        },
+                        {
+                            "name": "jcl-over-slf4j",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/2.0.17/jcl-over-slf4j-2.0.17-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.pekko",
+                    "name": "pekko-actor_3",
+                    "version": "1.0.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "pekko-actor_3",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-actor_3/1.0.3/pekko-actor_3-1.0.3.jar"
+                        },
+                        {
+                            "name": "pekko-actor_3",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-actor_3/1.0.3/pekko-actor_3-1.0.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.pekko",
+                    "name": "pekko-actor-typed_3",
+                    "version": "1.0.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "pekko-actor-typed_3",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-actor-typed_3/1.0.3/pekko-actor-typed_3-1.0.3.jar"
+                        },
+                        {
+                            "name": "pekko-actor-typed_3",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-actor-typed_3/1.0.3/pekko-actor-typed_3-1.0.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.pekko",
+                    "name": "pekko-slf4j_3",
+                    "version": "1.0.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "pekko-slf4j_3",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-slf4j_3/1.0.3/pekko-slf4j_3-1.0.3.jar"
+                        },
+                        {
+                            "name": "pekko-slf4j_3",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-slf4j_3/1.0.3/pekko-slf4j_3-1.0.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.pekko",
+                    "name": "pekko-serialization-jackson_3",
+                    "version": "1.0.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "pekko-serialization-jackson_3",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-serialization-jackson_3/1.0.3/pekko-serialization-jackson_3-1.0.3.jar"
+                        },
+                        {
+                            "name": "pekko-serialization-jackson_3",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-serialization-jackson_3/1.0.3/pekko-serialization-jackson_3-1.0.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-core",
+                    "version": "2.14.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-core",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.14.3/jackson-core-2.14.3.jar"
+                        },
+                        {
+                            "name": "jackson-core",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.14.3/jackson-core-2.14.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-annotations",
+                    "version": "2.14.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-annotations",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.14.3/jackson-annotations-2.14.3.jar"
+                        },
+                        {
+                            "name": "jackson-annotations",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.14.3/jackson-annotations-2.14.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.datatype",
+                    "name": "jackson-datatype-jdk8",
+                    "version": "2.14.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-datatype-jdk8",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.14.3/jackson-datatype-jdk8-2.14.3.jar"
+                        },
+                        {
+                            "name": "jackson-datatype-jdk8",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.14.3/jackson-datatype-jdk8-2.14.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.datatype",
+                    "name": "jackson-datatype-jsr310",
+                    "version": "2.14.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-datatype-jsr310",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.14.3/jackson-datatype-jsr310-2.14.3.jar"
+                        },
+                        {
+                            "name": "jackson-datatype-jsr310",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.14.3/jackson-datatype-jsr310-2.14.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-databind",
+                    "version": "2.14.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-databind",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.14.3/jackson-databind-2.14.3.jar"
+                        },
+                        {
+                            "name": "jackson-databind",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.14.3/jackson-databind-2.14.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.dataformat",
+                    "name": "jackson-dataformat-cbor",
+                    "version": "2.14.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-dataformat-cbor",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.14.3/jackson-dataformat-cbor-2.14.3.jar"
+                        },
+                        {
+                            "name": "jackson-dataformat-cbor",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.14.3/jackson-dataformat-cbor-2.14.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.module",
+                    "name": "jackson-module-parameter-names",
+                    "version": "2.14.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-module-parameter-names",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-parameter-names/2.14.3/jackson-module-parameter-names-2.14.3.jar"
+                        },
+                        {
+                            "name": "jackson-module-parameter-names",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-parameter-names/2.14.3/jackson-module-parameter-names-2.14.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.module",
+                    "name": "jackson-module-scala_3",
+                    "version": "2.14.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-module-scala_3",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-scala_3/2.14.3/jackson-module-scala_3-2.14.3.jar"
+                        },
+                        {
+                            "name": "jackson-module-scala_3",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-scala_3/2.14.3/jackson-module-scala_3-2.14.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.jsonwebtoken",
+                    "name": "jjwt-api",
+                    "version": "0.11.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jjwt-api",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/io/jsonwebtoken/jjwt-api/0.11.5/jjwt-api-0.11.5.jar"
+                        },
+                        {
+                            "name": "jjwt-api",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/io/jsonwebtoken/jjwt-api/0.11.5/jjwt-api-0.11.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.jsonwebtoken",
+                    "name": "jjwt-impl",
+                    "version": "0.11.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jjwt-impl",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/io/jsonwebtoken/jjwt-impl/0.11.5/jjwt-impl-0.11.5.jar"
+                        },
+                        {
+                            "name": "jjwt-impl",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/io/jsonwebtoken/jjwt-impl/0.11.5/jjwt-impl-0.11.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.jsonwebtoken",
+                    "name": "jjwt-jackson",
+                    "version": "0.11.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jjwt-jackson",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/io/jsonwebtoken/jjwt-jackson/0.11.5/jjwt-jackson-0.11.5.jar"
+                        },
+                        {
+                            "name": "jjwt-jackson",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/io/jsonwebtoken/jjwt-jackson/0.11.5/jjwt-jackson-0.11.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.playframework",
+                    "name": "play-json_3",
+                    "version": "3.0.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-json_3",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-json_3/3.0.5/play-json_3-3.0.5.jar"
+                        },
+                        {
+                            "name": "play-json_3",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-json_3/3.0.5/play-json_3-3.0.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.guava",
+                    "name": "guava",
+                    "version": "32.1.3-jre",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "guava",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/guava/guava/32.1.3-jre/guava-32.1.3-jre.jar"
+                        },
+                        {
+                            "name": "guava",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/guava/guava/32.1.3-jre/guava-32.1.3-jre-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "javax.inject",
+                    "name": "javax.inject",
+                    "version": "1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "javax.inject",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.jar"
+                        },
+                        {
+                            "name": "javax.inject",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe",
+                    "name": "ssl-config-core_3",
+                    "version": "0.6.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "ssl-config-core_3",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/ssl-config-core_3/0.6.1/ssl-config-core_3-0.6.1.jar"
+                        },
+                        {
+                            "name": "ssl-config-core_3",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/ssl-config-core_3/0.6.1/ssl-config-core_3-0.6.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "ch.qos.logback",
+                    "name": "logback-core",
+                    "version": "1.5.18",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "logback-core",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-core/1.5.18/logback-core-1.5.18.jar"
+                        },
+                        {
+                            "name": "logback-core",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-core/1.5.18/logback-core-1.5.18-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.reactivestreams",
+                    "name": "reactive-streams",
+                    "version": "1.0.4",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "reactive-streams",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar"
+                        },
+                        {
+                            "name": "reactive-streams",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.pekko",
+                    "name": "pekko-stream_3",
+                    "version": "1.0.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "pekko-stream_3",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-stream_3/1.0.3/pekko-stream_3-1.0.3.jar"
+                        },
+                        {
+                            "name": "pekko-stream_3",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-stream_3/1.0.3/pekko-stream_3-1.0.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.pekko",
+                    "name": "pekko-parsing_3",
+                    "version": "1.0.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "pekko-parsing_3",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-parsing_3/1.0.1/pekko-parsing_3-1.0.1.jar"
+                        },
+                        {
+                            "name": "pekko-parsing_3",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-parsing_3/1.0.1/pekko-parsing_3-1.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.parboiled",
+                    "name": "parboiled_3",
+                    "version": "2.5.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "parboiled_3",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/parboiled/parboiled_3/2.5.0/parboiled_3-2.5.0.jar"
+                        },
+                        {
+                            "name": "parboiled_3",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/parboiled/parboiled_3/2.5.0/parboiled_3-2.5.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "jakarta.inject",
+                    "name": "jakarta.inject-api",
+                    "version": "2.0.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jakarta.inject-api",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar"
+                        },
+                        {
+                            "name": "jakarta.inject-api",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "aopalliance",
+                    "name": "aopalliance",
+                    "version": "1.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "aopalliance",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.jar"
+                        },
+                        {
+                            "name": "aopalliance",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.errorprone",
+                    "name": "error_prone_annotations",
+                    "version": "2.21.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "error_prone_annotations",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.21.1/error_prone_annotations-2.21.1.jar"
+                        },
+                        {
+                            "name": "error_prone_annotations",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.21.1/error_prone_annotations-2.21.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.playframework",
+                    "name": "play-exceptions",
+                    "version": "3.0.8",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-exceptions",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-exceptions/3.0.8/play-exceptions-3.0.8.jar"
+                        },
+                        {
+                            "name": "play-exceptions",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-exceptions/3.0.8/play-exceptions-3.0.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe",
+                    "name": "config",
+                    "version": "1.4.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "config",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.3/config-1.4.3.jar"
+                        },
+                        {
+                            "name": "config",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.3/config-1.4.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.lz4",
+                    "name": "lz4-java",
+                    "version": "1.8.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "lz4-java",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/lz4/lz4-java/1.8.0/lz4-java-1.8.0.jar"
+                        },
+                        {
+                            "name": "lz4-java",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/lz4/lz4-java/1.8.0/lz4-java-1.8.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.thoughtworks.paranamer",
+                    "name": "paranamer",
+                    "version": "2.8",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "paranamer",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.jar"
+                        },
+                        {
+                            "name": "paranamer",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.playframework",
+                    "name": "play-functional_3",
+                    "version": "3.0.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-functional_3",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-functional_3/3.0.5/play-functional_3-3.0.5.jar"
+                        },
+                        {
+                            "name": "play-functional_3",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-functional_3/3.0.5/play-functional_3-3.0.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.guava",
+                    "name": "failureaccess",
+                    "version": "1.0.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "failureaccess",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar"
+                        },
+                        {
+                            "name": "failureaccess",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.guava",
+                    "name": "listenablefuture",
+                    "version": "9999.0-empty-to-avoid-conflict-with-guava",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "listenablefuture",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.code.findbugs",
+                    "name": "jsr305",
+                    "version": "3.0.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jsr305",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar"
+                        },
+                        {
+                            "name": "jsr305",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.j2objc",
+                    "name": "j2objc-annotations",
+                    "version": "2.8",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "j2objc-annotations",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar"
+                        },
+                        {
+                            "name": "j2objc-annotations",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.pekko",
+                    "name": "pekko-protobuf-v3_3",
+                    "version": "1.0.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "pekko-protobuf-v3_3",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-protobuf-v3_3/1.0.3/pekko-protobuf-v3_3-1.0.3.jar"
+                        },
+                        {
+                            "name": "pekko-protobuf-v3_3",
+                            "classifier": "sources",
+                            "path": "/home/nuge/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-protobuf-v3_3/1.0.3/pekko-protobuf-v3_3-1.0.3-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags": [
+            "library"
+        ]
+    }
+}

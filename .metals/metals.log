@@ -1,0 +1,196 @@
+2025.07.17 08:16:02 INFO  Started: Metals version 1.6.0 in folders '/home/nuge/bbelajar/farm' for client Visual Studio Code 1.98.1.
+2025.07.17 08:16:11 INFO  no build target found for /home/nuge/bbelajar/farm/app/models/ProductsModel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.07.17 08:16:11 INFO  no build target found for /home/nuge/bbelajar/farm/app/models/ProductsModel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.07.17 08:16:11 INFO  no build target found for /home/nuge/bbelajar/farm/app/models/ProductsModel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.07.17 08:16:12 INFO  no build target found for /home/nuge/bbelajar/farm/app/models/ProductsModel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.07.17 08:16:30 INFO  no build target found for /home/nuge/bbelajar/farm/app/models/ProductsModel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.07.17 08:16:45 INFO  no build target found for /home/nuge/bbelajar/farm/app/models/ProductsModel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.07.17 08:16:46 INFO  no build target found for /home/nuge/bbelajar/farm/app/models/ProductsModel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.07.17 08:16:46 INFO  no build target found for /home/nuge/bbelajar/farm/app/models/ProductsModel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.07.17 08:17:14 INFO  no build target found for /home/nuge/bbelajar/farm/app/models/ProductsModel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.07.17 08:21:47 INFO  no build target found for /home/nuge/bbelajar/farm/app/models/ProductsModel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.07.17 08:21:49 INFO  no build target found for /home/nuge/bbelajar/farm/app/models/ProductsModel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.07.17 08:21:52 INFO  no build target found for /home/nuge/bbelajar/farm/app/models/ProductsModel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.07.17 08:23:59 INFO  no build target found for /home/nuge/bbelajar/farm/app/models/ProductsModel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.07.17 08:24:00 INFO  no build target found for /home/nuge/bbelajar/farm/app/models/ProductsModel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.07.17 08:24:03 INFO  no build target found for /home/nuge/bbelajar/farm/app/models/ProductsModel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.07.17 08:24:03 INFO  no build target found for /home/nuge/bbelajar/farm/app/models/ProductsModel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.07.17 08:25:26 INFO  no build target found for /home/nuge/bbelajar/farm/app/models/ProductsModel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.07.17 08:36:21 INFO  no build target found for /home/nuge/bbelajar/farm/app/models/ProductsModel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.07.17 08:38:19 INFO  no build target found for /home/nuge/bbelajar/farm/app/models/ProductsModel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.07.17 08:38:57 INFO  no build target found for /home/nuge/bbelajar/farm/app/models/ProductsModel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.07.17 08:39:28 INFO  no build target found for /home/nuge/bbelajar/farm/app/models/ProductsModel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.07.17 08:43:03 INFO  no build target found for /home/nuge/bbelajar/farm/app/models/ProductsModel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.07.17 08:43:09 INFO  no build target found for /home/nuge/bbelajar/farm/app/models/ProductsModel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.07.17 08:43:11 INFO  Shutting down server
+2025.07.17 08:43:11 INFO  shutting down Metals
+2025.07.17 08:43:11 ERROR Unexpected error initializing server: 
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request window/showMessageRequest failed with message: Canceled
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2025.07.17 08:43:11 INFO  Exiting server
+2025.07.17 11:55:06 INFO  Started: Metals version 1.6.0 in folders '/home/nuge/bbelajar/farm' for client Visual Studio Code 1.98.1.
+Jul 17, 2025 11:55:11 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2025.07.17 11:55:20 INFO  running '/usr/bin/sbt -Dbloop.export-jar-classifiers=sources bloopInstall'
+2025.07.17 11:55:20 WARN  no build target for: /home/nuge/bbelajar/farm/project/metals.sbt
+2025.07.17 11:55:20 INFO  no build target found for /home/nuge/bbelajar/farm/project/project/metals.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.07.17 11:55:20 WARN  no build target for: /home/nuge/bbelajar/farm/project/project/metals.sbt
+2025.07.17 11:55:26 INFO  [info] welcome to sbt 1.11.3 (Ubuntu Java 21.0.7)
+2025.07.17 11:55:26 INFO  no build target found for /home/nuge/bbelajar/farm/project/metals.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.07.17 11:55:32 INFO  [info] loading settings for project farm-build-build-build from metals.sbt...
+2025.07.17 11:55:34 INFO  [info] loading project definition from /home/nuge/bbelajar/farm/project/project/project
+2025.07.17 11:55:42 INFO  [info] loading settings for project farm-build-build from metals.sbt...
+2025.07.17 11:55:42 INFO  [info] loading project definition from /home/nuge/bbelajar/farm/project/project
+2025.07.17 11:55:52 INFO  [success] Generated .bloop/farm-build-build.json
+2025.07.17 11:55:52 INFO  [success] Total time: 10 s, completed Jul 17, 2025, 11:55:53 AM
+2025.07.17 11:55:54 INFO  [info] loading settings for project farm-build from metals.sbt, plugins.sbt...
+2025.07.17 11:55:54 INFO  [info] loading project definition from /home/nuge/bbelajar/farm/project
+2025.07.17 11:56:00 INFO  [success] Generated .bloop/farm-build.json
+2025.07.17 11:56:00 INFO  [success] Total time: 6 s, completed Jul 17, 2025, 11:56:01 AM
+2025.07.17 11:56:06 INFO  [info] loading settings for project root from build.sbt...
+2025.07.17 11:56:06 INFO  [info]   __              __
+2025.07.17 11:56:06 INFO  [info]   \ \     ____   / /____ _ __  __
+2025.07.17 11:56:06 INFO  [info]    \ \   / __ \ / // __ `// / / /
+2025.07.17 11:56:06 INFO  [info]    / /  / /_/ // // /_/ // /_/ /
+2025.07.17 11:56:06 INFO  [info]   /_/  / .___//_/ \__,_/ \__, /
+2025.07.17 11:56:06 INFO  [info]       /_/               /____/
+2025.07.17 11:56:06 INFO  [info] 
+2025.07.17 11:56:06 INFO  [info] Version 3.0.8 running Java 21.0.7
+2025.07.17 11:56:06 INFO  [info] 
+2025.07.17 11:56:06 INFO  [info] Play is run entirely by the community. Please consider contributing and/or donating:
+2025.07.17 11:56:06 INFO  [info] https://www.playframework.com/sponsors
+2025.07.17 11:56:06 INFO  [info] 
+2025.07.17 11:56:09 INFO  [success] Generated .bloop/root-test.json
+2025.07.17 11:56:09 INFO  [success] Generated .bloop/root.json
+2025.07.17 11:56:09 INFO  [success] Total time: 2 s, completed Jul 17, 2025, 11:56:09 AM
+2025.07.17 11:56:10 INFO  time: ran 'sbt bloopInstall' in 49s
+2025.07.17 11:56:10 INFO  Attempting to connect to the build server...
+2025.07.17 11:56:10 INFO  No running Bloop server found, starting one.
+2025.07.17 11:56:13 INFO  Starting compilation server
+2025.07.17 11:56:16 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/nuge/bbelajar/farm/.metals/bsp.trace.json or /home/nuge/.cache/metals/bsp.trace.json
+2025.07.17 11:56:17 INFO  Attempting to connect to the build server...
+2025.07.17 11:56:17 INFO  Found a Bloop server running
+2025.07.17 11:56:17 INFO  Attempting to connect to the build server...
+2025.07.17 11:56:17 INFO  Found a Bloop server running
+2025.07.17 11:56:17 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/nuge/bbelajar/farm/project/project/.metals/bsp.trace.json or /home/nuge/.cache/metals/bsp.trace.json
+2025.07.17 11:56:17 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/nuge/bbelajar/farm/project/.metals/bsp.trace.json or /home/nuge/.cache/metals/bsp.trace.json
+2025.07.17 11:56:17 INFO  time: Connected to build server in 6.93s
+2025.07.17 11:56:17 INFO  Connected to Build server: Bloop v2.0.10
+2025.07.17 11:56:17 INFO  time: Imported build in 0.39s
+2025.07.17 11:56:26 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-21-openjdk-amd64/src.zip, /usr/lib/jvm/java-21-openjdk-amd64/lib/src.zip. Java symbols will not be available.
+2025.07.17 11:56:48 INFO  time: indexed workspace in 30s
+2025.07.17 12:57:07 INFO  compiling root (9 scala sources and 1 java source)
+2025.07.17 12:57:17 INFO  time: compiled root in 9.83s
+2025.07.17 16:32:13 INFO  Shutting down server
+2025.07.17 16:32:13 INFO  shutting down Metals
+2025.07.17 16:32:13 INFO  Shut down connection with build server.
+2025.07.17 16:32:13 INFO  Shut down connection with build server.
+2025.07.17 16:32:13 INFO  Shut down connection with build server.
+2025.07.17 16:32:13 INFO  Exiting server
+2025.07.18 08:41:07 INFO  Started: Metals version 1.6.0 in folders '/home/nuge/bbelajar/farm' for client Visual Studio Code 1.98.1.
+2025.07.18 08:41:08 INFO  Attempting to connect to the build server...
+2025.07.18 08:41:08 INFO  No running Bloop server found, starting one.
+2025.07.18 08:41:09 INFO  Starting compilation server
+Jul 18, 2025 8:41:10 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2025.07.18 08:41:11 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/nuge/bbelajar/farm/.metals/bsp.trace.json or /home/nuge/.cache/metals/bsp.trace.json
+2025.07.18 08:41:11 INFO  Attempting to connect to the build server...
+2025.07.18 08:41:11 INFO  Found a Bloop server running
+2025.07.18 08:41:11 INFO  Attempting to connect to the build server...
+2025.07.18 08:41:11 INFO  Found a Bloop server running
+2025.07.18 08:41:11 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/nuge/bbelajar/farm/project/project/.metals/bsp.trace.json or /home/nuge/.cache/metals/bsp.trace.json
+2025.07.18 08:41:11 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/nuge/bbelajar/farm/project/.metals/bsp.trace.json or /home/nuge/.cache/metals/bsp.trace.json
+2025.07.18 08:41:11 INFO  time: Connected to build server in 3.52s
+2025.07.18 08:41:11 INFO  Connected to Build server: Bloop v2.0.10
+2025.07.18 08:41:11 INFO  time: Imported build in 0.17s
+Jul 18, 2025 8:41:12 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2025.07.18 08:41:16 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-21-openjdk-amd64/src.zip, /usr/lib/jvm/java-21-openjdk-amd64/lib/src.zip. Java symbols will not be available.
+2025.07.18 08:41:18 INFO  time: indexed workspace in 6.4s
+2025.07.18 08:41:51 INFO  Shutting down server
+2025.07.18 08:41:51 INFO  shutting down Metals
+2025.07.18 08:41:51 INFO  Shut down connection with build server.
+2025.07.18 08:41:51 INFO  Shut down connection with build server.
+2025.07.18 08:41:51 INFO  Shut down connection with build server.
+2025.07.18 08:41:51 INFO  Exiting server
+2025.08.28 16:00:03 INFO  Started: Metals version 1.6.2 in folders '/home/nuge/bbelajar/farm' for client Visual Studio Code 1.98.1.
+2025.08.28 16:00:04 INFO  Attempting to connect to the build server...
+2025.08.28 16:00:04 INFO  No running Bloop server found, starting one.
+2025.08.28 16:00:10 INFO  Starting compilation server
+2025.08.28 16:00:12 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/nuge/bbelajar/farm/.metals/bsp.trace.json or /home/nuge/.cache/metals/bsp.trace.json
+2025.08.28 16:00:14 INFO  Attempting to connect to the build server...
+2025.08.28 16:00:14 INFO  Found a Bloop server running
+2025.08.28 16:00:14 INFO  Attempting to connect to the build server...
+2025.08.28 16:00:14 INFO  Found a Bloop server running
+2025.08.28 16:00:14 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/nuge/bbelajar/farm/project/project/.metals/bsp.trace.json or /home/nuge/.cache/metals/bsp.trace.json
+2025.08.28 16:00:14 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/nuge/bbelajar/farm/project/.metals/bsp.trace.json or /home/nuge/.cache/metals/bsp.trace.json
+2025.08.28 16:00:34 ERROR Timeout waiting for 'build/initialize' response
+2025.08.28 16:00:34 WARN  Retrying connection to the build server Bloop
+2025.08.28 16:00:34 INFO  Found a Bloop server running
+2025.08.28 16:00:34 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/nuge/bbelajar/farm/project/project/.metals/bsp.trace.json or /home/nuge/.cache/metals/bsp.trace.json
+2025.08.28 16:00:34 INFO  time: Connected to build server in 29s
+2025.08.28 16:00:34 INFO  Connected to Build server: Bloop v2.0.13
+2025.08.28 16:00:34 INFO  time: Imported build in 0.17s
+2025.08.28 16:00:46 INFO  Required scalafmt dialect rewrite to 'scala3'. Directories:
+- target/scala-3.3.4/twirl/main
+- target/scala-3.3.4/routes/main
+- app
+- test
+2025.08.28 16:00:51 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-21-openjdk-amd64/src.zip, /usr/lib/jvm/java-21-openjdk-amd64/lib/src.zip. Java symbols will not be available.
+2025.08.28 16:00:52 INFO  time: indexed workspace in 18s
+2025.08.28 16:01:18 INFO  compiling root (23 scala sources and 2 java sources)
+2025.08.28 16:01:37 WARN  javac exited with exit code 1
+2025.08.28 16:01:37 INFO  time: compiled root in 18s
+2025.08.28 16:38:29 INFO  compiling root (23 scala sources and 2 java sources)
+2025.08.28 16:38:37 WARN  javac exited with exit code 1
+2025.08.28 16:38:37 INFO  time: compiled root in 7.74s
+2025.08.28 16:39:30 INFO  compiling root (23 scala sources and 2 java sources)
+2025.08.28 16:39:36 WARN  javac exited with exit code 1
+2025.08.28 16:39:36 INFO  time: compiled root in 6.23s
+2025.08.28 16:47:11 INFO  Shutting down server
+2025.08.28 16:47:11 INFO  shutting down Metals
+2025.08.28 16:47:11 INFO  Shut down connection with build server.
+2025.08.28 16:47:11 INFO  Shut down connection with build server.
+2025.08.28 16:47:11 INFO  Shut down connection with build server.
+2025.08.28 16:47:11 INFO  Exiting server
+2025.08.28 18:21:45 INFO  Started: Metals version 1.6.2 in folders '/home/nuge/bbelajar/farm' for client Visual Studio Code 1.98.1.
+2025.08.28 18:21:48 INFO  Attempting to connect to the build server...
+2025.08.28 18:21:48 INFO  No running Bloop server found, starting one.
+2025.08.28 18:21:50 INFO  Starting compilation server
+Aug 28, 2025 6:21:52 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2025.08.28 18:21:52 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/nuge/bbelajar/farm/.metals/bsp.trace.json or /home/nuge/.cache/metals/bsp.trace.json
+2025.08.28 18:21:53 INFO  Attempting to connect to the build server...
+2025.08.28 18:21:53 INFO  Found a Bloop server running
+2025.08.28 18:21:53 INFO  Attempting to connect to the build server...
+2025.08.28 18:21:53 INFO  Found a Bloop server running
+2025.08.28 18:21:54 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/nuge/bbelajar/farm/project/project/.metals/bsp.trace.json or /home/nuge/.cache/metals/bsp.trace.json
+2025.08.28 18:21:54 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/nuge/bbelajar/farm/project/.metals/bsp.trace.json or /home/nuge/.cache/metals/bsp.trace.json
+2025.08.28 18:21:54 INFO  time: Connected to build server in 5.7s
+2025.08.28 18:21:54 INFO  Connected to Build server: Bloop v2.0.13
+Aug 28, 2025 6:21:54 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Aug 28, 2025 6:21:54 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2025.08.28 18:21:54 INFO  time: Imported build in 0.4s
+Aug 28, 2025 6:21:54 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2025.08.28 18:21:55 INFO  Required scalafmt dialect rewrite to 'scala3'. Directories:
+- target/scala-3.3.4/twirl/main
+- target/scala-3.3.4/routes/main
+- app
+- test
+Aug 28, 2025 6:21:56 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2025.08.28 18:22:02 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-21-openjdk-amd64/src.zip, /usr/lib/jvm/java-21-openjdk-amd64/lib/src.zip. Java symbols will not be available.
+2025.08.28 18:22:06 INFO  time: indexed workspace in 11s

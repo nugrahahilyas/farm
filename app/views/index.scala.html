@@ -1,0 +1,187 @@
+@(base_url: String)
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perkebunan - Simple CRUD</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href='@routes.Assets.versioned("styles.css")'>
+</head>
+<body>
+<!-- Simplified header with only 3 navigation tabs -->
+<!-- <header class="header">
+    <div class="container">
+        <h1><i class="fas fa-seedling"></i> Perkebunan</h1>
+        <nav class="nav">
+            <button class="nav-btn active" data-page="products">Products</button>
+            <button class="nav-btn" data-page="users">Users</button>
+            <button class="nav-btn" data-page="carts">Carts</button>
+        </nav>
+        <div class="user-select-wrapper">
+            <select id="selected-user-id">
+                <option value="">-- Select User --</option>
+            </select>
+        </div>
+    </div>
+</header> -->
+
+<header class="header">
+    <div class="container" style="display: flex; align-items: center; justify-content: space-between;">
+      <h1><i class="fas fa-seedling"></i> Perkebunan</h1>
+      <nav class="nav">
+        <button class="nav-btn active" data-page="products">Products</button>
+        <button class="nav-btn" data-page="users">Users</button>
+        <button class="nav-btn" data-page="carts">Carts</button>
+      </nav>
+  
+      <!-- Select user pojok kanan -->
+      <div class="user-select-wrapper">
+        <select id="selected-user-id">
+          <option value="">-- Select User --</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+<main class="main">
+    <!-- Products Section with inline add/edit forms -->
+    <input type="hidden" id="base_url" val='@base_url'>
+    <div id="products-page" class="page active">
+        <div class="container">
+            <!-- Add Product Form at the top -->
+            <div class="form-section">
+                <h3>Add New Product</h3>
+                <form id="product-form" class="inline-form">
+                    <input type="text" id="product-title" placeholder="Product Title" required>
+                    <input type="text" id="product-distributor" placeholder="Distributor" required>
+                    <input type="text" id="product-description" placeholder="Description" required>
+                    <input type="number" id="product-price" placeholder="Price" required>
+                    <input type="url" id="product-imageUrl" placeholder="Image URL">
+                    <input type="number" id="product-stock" placeholder="Stock" required>
+                    <select id="product-farmItemType" required>
+                        <option value="">Select Type</option>
+                        <option value="Sayuran">Sayuran</option>
+                        <option value="Buah">Buah</option>
+                        <option value="Produk Olahan">Produk Olahan</option>
+                    </select>
+                    <button type="submit" class="btn-primary">
+                        <i class="fas fa-plus"></i> Add Product
+                    </button>
+                </form>
+            </div>
+
+            <!-- Edit Product Form (hidden by default) -->
+            <div id="edit-product-section" class="form-section" style="display: none;">
+                <h3>Edit Product</h3>
+                <form id="edit-product-form" class="inline-form">
+                    <input type="hidden" id="edit-product-id">
+                    <input type="text" id="edit-product-title" placeholder="Product Title" required>
+                    <input type="text" id="edit-product-distributor" placeholder="Distributor" required>
+                    <input type="text" id="edit-product-description" placeholder="Description" required>
+                    <input type="number" id="edit-product-price" placeholder="Price" required>
+                    <input type="url" id="edit-product-imageUrl" placeholder="Image URL">
+                    <input type="number" id="edit-product-stock" placeholder="Stock" required>
+                    <select id="edit-product-farmItemType" required>
+                        <option value="">Select Type</option>
+                        <option value="Sayuran">Sayuran</option>
+                        <option value="Buah">Buah</option>
+                        <option value="Produk Olahan">Produk Olahan</option>
+                    </select>
+                    <button type="submit" class="btn-primary">
+                        <i class="fas fa-save"></i> Update Product
+                    </button>
+                    <button type="button" id="cancel-edit" class="btn-secondary">Cancel</button>
+                </form>
+            </div>
+
+            <div class="page-header">
+                <h2>Products List</h2>
+            </div>
+            <div id="products-table" class="data-table">
+                <!-- Products table will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Users Section -->
+    <div id="users-page" class="page">
+        <div class="container">
+            <div class="page-header">
+                <h2>Users</h2>
+                <button id="add-user-btn" class="btn-primary">
+                    <i class="fas fa-plus"></i> Add User
+                </button>
+            </div>
+            <div id="users-table" class="data-table">
+                <!-- Users table will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Carts Section with Order functionality -->
+    <div id="carts-page" class="page">
+        <div class="container">
+            <div class="page-header">
+                <h2>Carts</h2>
+            </div>
+            <div id="carts-table" class="data-table">
+                <!-- Carts table will be loaded here -->
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Universal Modal -->
+<div id="crud-modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 id="modal-title">Add Item</h3>
+            <button class="modal-close">&times;</button>
+        </div>
+        <div id="modal-body">
+            <!-- Dynamic form content -->
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn-secondary modal-close">Cancel</button>
+            <button type="button" id="modal-save" class="btn-primary">Save</button>
+        </div>
+    </div>
+</div>
+
+<!-- Add to Cart Modal with user icon selector -->
+<div id="add-to-cart-modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3><i class="fas fa-shopping-cart"></i> Add to Cart</h3>
+            <button class="modal-close">&times;</button>
+        </div>
+        <div id="add-to-cart-body">
+            <div class="form-group">
+                <label><i class="fas fa-user"></i> Select User:</label>
+                <div id="user-selector" class="user-selector">
+                    <!-- User icons will be populated here -->
+                </div>
+<!--                <input type="hidden" id="selected-user-id">-->
+            </div>
+            <div class="form-group">
+                <label><i class="fas fa-sort-numeric-up"></i> Quantity:</label>
+                <input type="number" id="cart-quantity" min="1" value="1" required>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn-secondary modal-close">Cancel</button>
+            <button type="button" id="add-to-cart-save" class="btn-primary">Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+<div id="loading" class="loading">
+    <div class="spinner"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src='@routes.Assets.versioned("script.js")'></script>
+</body>
+</html>

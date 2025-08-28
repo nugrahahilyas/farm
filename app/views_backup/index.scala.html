@@ -1,0 +1,146 @@
+@()
+
+@main("Product List") {
+<div class="container mt-4">
+    <h1 class="mb-4">Product List</h1>
+
+    <!-- Search bar -->
+    <div class="input-group mb-3">
+        <input type="text" id="searchInput" class="form-control" placeholder="Search product...">
+        <button class="btn btn-primary" id="btnSearch">Search</button>
+    </div>
+
+    <!-- Table -->
+    <table class="table table-bordered table-striped">
+        <thead class="table-dark">
+        <tr>
+            <th>No</th>
+            <th>Title</th>
+            <th>Distributor</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Stock</th>
+            <th>Type</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody id="productTable">
+        <!-- Data akan diisi via jQuery -->
+        </tbody>
+    </table>
+
+    <!-- Pagination -->
+    <nav>
+        <ul class="pagination" id="pagination"></ul>
+    </nav>
+</div>
+
+<script>
+    let currentPage = 1;
+    let limit = 10;
+
+    function loadProducts(page = 1, search = "") {
+      $.getJSON(`/api/products?page=${page}&limit=${limit}&search=${search}`, function(res) {
+        let rows = "";
+        $.each(res.data, function(i, p) {
+          rows += `
+            <tr>
+              <td>${((page-1)*limit) + (i + 1)}</td>
+              <td>${p.title}</td>
+              <td>${p.distributor || '-'}</td>
+              <td>${p.description || '-'}</td>
+              <td>${p.price}</td>
+              <td>${p.stock}</td>
+              <td>${p.farmItemType}</td>
+              <td>
+                <button class="btn btn-sm btn-warning btn-edit" data-id="${p.id}" data-product='${JSON.stringify(p)}'>Edit</button>
+                <button class="btn btn-sm btn-danger btn-delete" data-id="${p.id}">Delete</button>
+              </td>
+            </tr>
+          `;
+        });
+        $("#productTable").html(rows);
+
+        // pagination
+        let totalPages = Math.ceil(res.total / limit);
+        let paginationHtml = "";
+        for (let i = 1; i <= totalPages; i++) {
+          paginationHtml += `
+            <li class="page-item ${i === page ? 'active' : ''}">
+              <a class="page-link" href="#">${i}</a>
+            </li>`;
+        }
+        $("#pagination").html(paginationHtml);
+
+        // event click pagination
+        $("#pagination .page-link").click(function(e) {
+          e.preventDefault();
+          let newPage = parseInt($(this).text());
+          currentPage = newPage;
+          loadProducts(currentPage, $("#searchInput").val());
+        });
+      });
+    }
+
+     $(".btn-edit").click(function() {
+          let product = $(this).data("product");
+          $("#editId").val(product.id);
+          $("#editTitle").val(product.title);
+          $("#editDistributor").val(product.distributor);
+          $("#editDescription").val(product.description);
+          $("#editPrice").val(product.price);
+          $("#editStock").val(product.stock);
+          $("#editModal").modal("show");
+        });
+
+    $(function() {
+      loadProducts();
+
+      $("#btnSearch").click(function() {
+        loadProducts(1, $("#searchInput").val());
+      });
+
+      $("#editForm").submit(function(e) {
+        e.preventDefault();
+        let id = $("#editId").val();
+        let payload = {
+          title: $("#editTitle").val(),
+          distributor: $("#editDistributor").val(),
+          description: $("#editDescription").val(),
+          price: $("#editPrice").val(),
+          stock: $("#editStock").val()
+        };
+        $.ajax({
+          url: `/api/products/${id}`,
+          type: "PUT",
+          contentType: "application/json",
+          data: JSON.stringify(payload),
+          success: function() {
+            $("#editModal").modal("hide");
+            loadProducts(currentPage, $("#searchInput").val());
+          }
+        });
+      });
+
+        $(".btn-delete").click(function() {
+          let id = $(this).data("id");
+          if (confirm("Are you sure want to delete this product?")) {
+            $.ajax({
+              url: `/api/products/${id}`,
+              type: "DELETE",
+              success: function() {
+                loadProducts(currentPage, $("#searchInput").val());
+              }
+            });
+          }
+        });
+
+      $("#searchInput").on("keypress", function(e) {
+        if (e.which === 13) { // 13 = kode tombol Enter
+          loadProducts(1, $(this).val());
+        }
+      });
+
+    });
+</script>
+}

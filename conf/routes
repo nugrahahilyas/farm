@@ -1,0 +1,38 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# https://www.playframework.com/documentation/latest/ScalaRouting
+# ~~~~
+
+# An example controller showing a sample home page
+GET     /                           controllers.HomeController.index()
+# GET   /products                     controllers.Assets.versioned("products.scala.html")
+
+# PRODUCTS
+GET     /api/products-by-type           controllers.ProductsController.getProductsByType
+GET     /api/products-by-type/:id       controllers.ProductsController.getProductsByTypeId(id: Long)
+GET     /api/products                   controllers.ProductsController.getListProduct(page: Int ?= 1)
+POST   /api/products               controllers.ProductsController.createProduct
+PUT    /api/products/:id           controllers.ProductsController.updateProduct(id: Long)
+DELETE /api/products/:id           controllers.ProductsController.deleteProduct(id: Long)
+
+# USERS
+GET     /api/users              controllers.UsersController.listUsers
+GET     /api/users/:id          controllers.UsersController.getUserDetail(id: Long)
+POST    /api/users              controllers.UsersController.insertUser
+PUT     /api/users/:id          controllers.UsersController.updateUser(id: Long)
+DELETE  /api/users/:id          controllers.UsersController.deleteUser(id: Long)
+
+# CARTS
+GET     /api/carts                 controllers.CartsController.listCarts
+GET     /api/carts/:id             controllers.CartsController.getCartDetail(id: Long)
+POST    /api/carts                 controllers.CartsController.insertCart
+PUT     /api/carts/:id             controllers.CartsController.updateCart(id: Long)
+DELETE  /api/carts/:id             controllers.CartsController.deleteCart(id: Long)
+
+# Transactions
+GET     /api/transactions                 controllers.api.TransactionsController.listTransactions
+GET     /api/transactions/:id             controllers.api.TransactionsController.getTransaction(id: Long)
+POST    /api/transactions/:cartId         controllers.api.TransactionsController.insertTransaction(cartId: Long)
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
