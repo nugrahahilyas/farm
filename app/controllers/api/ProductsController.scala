@@ -19,6 +19,12 @@ class ProductsController @Inject() (
     }
   }
 
+  def getAllTypes: Action[AnyContent] = Action.async {
+    productsModel.getAllTypes().map { data =>
+      Ok(Json.toJson(data))
+    }
+  }
+
   def getProductsByTypeId(id: Long): Action[AnyContent] = Action.async {
     for {
       types <- productsModel.getAllTypes()

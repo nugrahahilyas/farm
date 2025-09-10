@@ -9,6 +9,7 @@ GET     /                           controllers.HomeController.index()
 
 # PRODUCTS
 GET     /api/products-by-type           controllers.ProductsController.getProductsByType
+GET     /api/types                      controllers.ProductsController.getAllTypes
 GET     /api/products-by-type/:id       controllers.ProductsController.getProductsByTypeId(id: Long)
 GET     /api/products                   controllers.ProductsController.getListProduct(page: Int ?= 1)
 POST   /api/products               controllers.ProductsController.createProduct
@@ -32,7 +33,7 @@ DELETE  /api/carts/:id             controllers.CartsController.deleteCart(id: Lo
 # Transactions
 GET     /api/transactions                 controllers.api.TransactionsController.listTransactions
 GET     /api/transactions/:id             controllers.api.TransactionsController.getTransaction(id: Long)
-POST    /api/transactions/:cartId         controllers.api.TransactionsController.insertTransaction(cartId: Long)
+POST    /api/transactions               controllers.api.TransactionsController.insertTransaction
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)

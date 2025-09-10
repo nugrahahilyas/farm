@@ -194,3 +194,50 @@ Aug 28, 2025 6:21:56 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notif
 INFO: Unsupported notification method: $/setTrace
 2025.08.28 18:22:02 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-21-openjdk-amd64/src.zip, /usr/lib/jvm/java-21-openjdk-amd64/lib/src.zip. Java symbols will not be available.
 2025.08.28 18:22:06 INFO  time: indexed workspace in 11s
+Aug 28, 2025 6:27:57 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2025.08.28 18:46:48 INFO  Shutting down server
+2025.08.28 18:46:48 INFO  shutting down Metals
+2025.08.28 18:46:48 INFO  Shut down connection with build server.
+2025.08.28 18:46:48 INFO  Shut down connection with build server.
+2025.08.28 18:46:48 INFO  Shut down connection with build server.
+2025.08.28 18:46:48 INFO  Exiting server
+2025.08.29 08:28:58 INFO  Started: Metals version 1.6.2 in folders '/home/nuge/bbelajar/farm' for client Visual Studio Code 1.98.1.
+2025.08.29 08:28:59 INFO  Attempting to connect to the build server...
+2025.08.29 08:28:59 INFO  No running Bloop server found, starting one.
+2025.08.29 08:29:00 INFO  Starting compilation server
+Aug 29, 2025 8:29:01 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Aug 29, 2025 8:29:01 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Aug 29, 2025 8:29:01 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Aug 29, 2025 8:29:02 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2025.08.29 08:29:02 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/nuge/bbelajar/farm/.metals/bsp.trace.json or /home/nuge/.cache/metals/bsp.trace.json
+2025.08.29 08:29:03 INFO  Attempting to connect to the build server...
+2025.08.29 08:29:03 INFO  Found a Bloop server running
+2025.08.29 08:29:03 INFO  Attempting to connect to the build server...
+2025.08.29 08:29:03 INFO  Found a Bloop server running
+Aug 29, 2025 8:29:03 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2025.08.29 08:29:03 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/nuge/bbelajar/farm/project/project/.metals/bsp.trace.json or /home/nuge/.cache/metals/bsp.trace.json
+2025.08.29 08:29:03 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/nuge/bbelajar/farm/project/.metals/bsp.trace.json or /home/nuge/.cache/metals/bsp.trace.json
+2025.08.29 08:29:03 INFO  time: Connected to build server in 4.55s
+2025.08.29 08:29:03 INFO  Connected to Build server: Bloop v2.0.13
+2025.08.29 08:29:03 INFO  time: Imported build in 0.19s
+2025.08.29 08:29:04 INFO  Required scalafmt dialect rewrite to 'scala3'. Directories:
+- target/scala-3.3.4/twirl/main
+- target/scala-3.3.4/routes/main
+- app
+- test
+2025.08.29 08:29:08 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-21-openjdk-amd64/src.zip, /usr/lib/jvm/java-21-openjdk-amd64/lib/src.zip. Java symbols will not be available.
+2025.08.29 08:29:09 INFO  time: indexed workspace in 6s
+Aug 29, 2025 8:29:10 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2025.08.29 08:30:04 INFO  Shutting down server
+2025.08.29 08:30:04 INFO  shutting down Metals
+2025.08.29 08:30:04 INFO  Shut down connection with build server.
+2025.08.29 08:30:04 INFO  Shut down connection with build server.
+2025.08.29 08:30:04 INFO  Shut down connection with build server.
+2025.08.29 08:30:04 INFO  Exiting server

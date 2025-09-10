@@ -14,6 +14,17 @@
     const API_BASE_URL = $('#base_url').val();
     let isDemo = false
     let selectedProductForCart = null
+    $.getJSON(`${API_BASE_URL}/api/types`, function (data) {
+            $.each(data, function (i, item) {
+                $("#product-farmItemType").append(
+                    $("<option>", {
+                        value: item.typeId,
+                        text: item.typeName,
+                        title: item.description
+                    })
+                );
+            });
+        });
 
     const demoData = {
       products: [],
@@ -608,7 +619,7 @@
       }
 
       $.ajax({
-        url: `${API_BASE_URL}${entity}/${id}`,
+        url: `${API_BASE_URL}/api/${entity}/${id}`,
         method: "DELETE",
         timeout: 5000,
       })
@@ -646,29 +657,10 @@
         description: isEdit ? $("#edit-product-description").val() : $("#product-description").val(),
         price: Number.parseInt(isEdit ? $("#edit-product-price").val() : $("#product-price").val()),
         stock: Number.parseInt(isEdit ? $("#edit-product-stock").val() : $("#product-stock").val()),
-        farmItemType: isEdit ? $("#edit-product-farmItemType").val() : $("#product-farmItemType").val(),
-      }
-
-      if (!data.title || !data.distributor || !data.description || !data.price || !data.stock || !data.farmItemType) {
-        alert("Please fill all fields")
-        return
+        typeId: Number.parseInt(isEdit ? $("#edit-product-farmItemType").val() : $("#product-farmItemType").val())
       }
 
       showLoading()
-
-      if (isDemo) {
-        setTimeout(() => {
-          hideLoading()
-          alert(`Product ${isEdit ? "updated" : "created"} successfully (Demo Mode)`)
-          if (isEdit) {
-            $("#edit-product-section").hide()
-          }
-          $("#product-form")[0].reset()
-          $("#edit-product-form")[0].reset()
-          loadData("products")
-        }, 1000)
-        return
-      }
 
       const url = isEdit ? `${API_BASE_URL}/api/products/${$("#edit-product-id").val()}` : `${API_BASE_URL}/api/products`
       const method = isEdit ? "PUT" : "POST"

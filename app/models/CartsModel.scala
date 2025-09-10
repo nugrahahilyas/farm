@@ -97,23 +97,56 @@ class CartsModel @Inject() (dbApi: DBApi)(implicit ec: ExecutionContext) {
     }
   }
 
+//  def insert(req: CartFormat.CartReq): Future[Long] = Future {
+//    db.withConnection { implicit conn =>
+//      val totalPrice: BigDecimal = req.items.map(x => x.unitPrice * x.qty).sum
+//
+//      val cartId: Long =
+//        SQL"""
+//          INSERT INTO cart (user_id, price)
+//          VALUES (${req.userId}, $totalPrice)
+//        """.executeInsert(scalar[Long].single)
+//
+//      req.items.foreach { it =>
+//        val itemTotal = it.unitPrice * it.qty
+//        SQL"""
+//            INSERT INTO cart_farm_items (cart_id, farm_items_id, qty, unit_price, total_price)
+//            VALUES ($cartId, ${it.farmItemsId}, ${it.qty}, ${it.unitPrice}, $itemTotal)
+//         """.executeInsert()
+//      }
+//      cartId
+//    }
+//  }
   def insert(req: CartFormat.CartReq): Future[Long] = Future {
     db.withConnection { implicit conn =>
-      val totalPrice: BigDecimal = req.items.map(x => x.unitPrice * x.qty).sum
+      // Hitung total price berdasarkan harga asli farm_items
+      val itemsWithPrice = req.items.map { it =>
+        val farmItemPrice =
+          SQL"""
+            SELECT price FROM farm_items WHERE id = ${it.farmItemsId}
+          """.as(scalar[BigDecimal].single)
 
+        val totalItem = farmItemPrice * it.qty
+        (it.farmItemsId, it.qty, farmItemPrice, totalItem)
+      }
+
+      val totalPrice: BigDecimal = itemsWithPrice.map(_._4).sum
+
+      // Insert cart
       val cartId: Long =
         SQL"""
-          INSERT INTO cart (user_id, price)
-          VALUES (${req.userId}, $totalPrice)
-        """.executeInsert(scalar[Long].single)
+            INSERT INTO cart (user_id, price)
+            VALUES (${req.userId}, $totalPrice)
+          """.executeInsert(scalar[Long].single)
 
-      req.items.foreach { it =>
-        val itemTotal = it.unitPrice * it.qty
+      // Insert items ke cart_farm_items
+      itemsWithPrice.foreach { case (farmItemsId, qty, unitPrice, totalItem) =>
         SQL"""
             INSERT INTO cart_farm_items (cart_id, farm_items_id, qty, unit_price, total_price)
-            VALUES ($cartId, ${it.farmItemsId}, ${it.qty}, ${it.unitPrice}, $itemTotal)
-         """.executeInsert()
+            VALUES ($cartId, $farmItemsId, $qty, $unitPrice, $totalItem)
+          """.executeInsert()
       }
+
       cartId
     }
   }

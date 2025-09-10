@@ -25,7 +25,8 @@ class TransactionsController @Inject() (
     }
   }
 
-  def insertTransaction(cartId: Long): Action[AnyContent] = Action.async {
+  def insertTransaction: Action[JsValue] = Action.async(parse.json) { implicit request =>
+    val cartId = (request.body \ "cartId").as[Long]
     transactionsModel.insert(cartId).map {
       case Right(id) =>
         Created(Json.obj("message" -> "Transaction created", "id" -> id))

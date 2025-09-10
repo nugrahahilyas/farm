@@ -145,8 +145,15 @@ class ProductsModel @Inject() (dbApi: DBApi)(implicit ec: ExecutionContext) {
   }
 
   /** Create new product */
-  def createProduct(title: String, typeId: Long, distributor: String, description: Option[String],
-                    price: Option[BigDecimal], imageUrl: Option[String], stock: Int): Future[Long] = Future {
+  def createProduct(
+      title: String,
+      typeId: Long,
+      distributor: String,
+      description: Option[String],
+      price: Option[BigDecimal],
+      imageUrl: Option[String],
+      stock: Int
+  ): Future[Long] = Future {
     db.withConnection { implicit conn =>
       SQL"""
         INSERT INTO farm_items (title, farm_item_type_id, distributor, description, price, image_url, stock)
@@ -156,9 +163,16 @@ class ProductsModel @Inject() (dbApi: DBApi)(implicit ec: ExecutionContext) {
   }
 
   /** Update product */
-  def updateProduct(id: Long, title: Option[String], typeId: Option[Long], distributor: Option[String],
-                    description: Option[String], price: Option[BigDecimal],
-                    imageUrl: Option[String], stock: Option[Int]): Future[Boolean] = Future {
+  def updateProduct(
+      id: Long,
+      title: Option[String],
+      typeId: Option[Long],
+      distributor: Option[String],
+      description: Option[String],
+      price: Option[BigDecimal],
+      imageUrl: Option[String],
+      stock: Option[Int]
+  ): Future[Boolean] = Future {
     db.withConnection { implicit conn =>
       val setParts = Seq(
         title.map(v => s"title = '$v'"),
@@ -186,6 +200,5 @@ class ProductsModel @Inject() (dbApi: DBApi)(implicit ec: ExecutionContext) {
       SQL"DELETE FROM farm_items WHERE id = $id".executeUpdate() > 0
     }
   }
-
 
 }
